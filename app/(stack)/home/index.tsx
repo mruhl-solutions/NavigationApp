@@ -1,5 +1,5 @@
 import CustomButton from '@/components/shared/CustomButton';
-import { Link, router } from 'expo-router';
+import { router } from 'expo-router';
 import React from 'react';
 import { SafeAreaView, View } from 'react-native';
 
@@ -9,23 +9,18 @@ const HomeScreen = () => {
       <View>
 
         <CustomButton color='primary' className='mb-2' onPress={() => router.push('/products')}>
-          Products
+          Productos
         </CustomButton>
 
         <CustomButton color='secondary' className='mb-2' onPress={() => router.push('/profile')}>
-          Profile
+          Perfil
         </CustomButton>
 
         <CustomButton color='tertiary' className='mb-2' onPress={() => router.push('/settings')}>
-          Settings
+          Ajustes
         </CustomButton>
 
-        <Link href='/products' asChild>
-            <CustomButton variant='text-only' className='mb-2' color='primary'>Productos</CustomButton>
-        </Link>
-
       </View>
-      
     </SafeAreaView>
   )
 }

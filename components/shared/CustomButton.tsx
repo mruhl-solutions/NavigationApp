@@ -36,7 +36,7 @@ const CustomButton = ({ children, color = 'primary', onPress, onLongPress, varia
 
   return (
     <Pressable
-        className={`p-3 rounded-md ${btnColor} ${className} active:opacity-80`}
+        className={`p-3 m-2 rounded-md ${btnColor} ${className} active:opacity-80`}
         onPress={onPress} 
         onLongPress={onLongPress}
     >
