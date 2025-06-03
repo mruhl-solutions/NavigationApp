@@ -11,6 +11,7 @@ const DrawerLayout = () => {
         overlayColor: 'rgba(0,0,0,0.6)',
         drawerActiveTintColor: 'red',
         headerShadowVisible: false,
+        // headerShown: false,
         sceneStyle: {
           backgroundColor: 'white'
         }
@@ -33,6 +34,17 @@ const DrawerLayout = () => {
             title: 'Horario',
             drawerIcon: ({ color, size }) => (
               <FontAwesome name='calendar-o' color={color} size={size} />
+            )
+          }}
+        />
+        <Drawer.Screen
+          name="(tabs)"
+          options={{
+            headerShown: false,
+            drawerLabel: 'Tabs + Stack',
+            title: 'Tabs + Stack',
+            drawerIcon: ({ color, size }) => (
+              <FontAwesome name='cloud-download' color={color} size={size} />
             )
           }}
         />

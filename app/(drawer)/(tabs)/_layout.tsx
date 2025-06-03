@@ -6,7 +6,7 @@ const TabsLayout = () => {
   return (
     <Tabs screenOptions={{ 
         tabBarActiveTintColor: 'red',
-        headerShown: false
+        // headerShown: false
     }}>
       <Tabs.Screen
         name="home/index"
@@ -25,6 +25,7 @@ const TabsLayout = () => {
       <Tabs.Screen
         name="(stack)"
         options={{
+          headerShown: false,
           title: 'stack',
           tabBarIcon: ({ color }) => <FontAwesome size={30} name="sign-out" color={color} />,
         }}
