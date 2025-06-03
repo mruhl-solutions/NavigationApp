@@ -4,7 +4,10 @@ import React from 'react';
 
 const TabsLayout = () => {
   return (
-    <Tabs screenOptions={{ tabBarActiveTintColor: 'red' }}>
+    <Tabs screenOptions={{ 
+        tabBarActiveTintColor: 'red',
+        headerShown: false
+    }}>
       <Tabs.Screen
         name="home/index"
         options={{
@@ -16,7 +19,14 @@ const TabsLayout = () => {
         name="favorites/index"
         options={{
           title: 'Favoritos',
-          tabBarIcon: ({ color }) => <FontAwesome size={30} name="heart" color={color} />,
+          tabBarIcon: ({ color }) => <FontAwesome size={30} name="hand-paper-o" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="(stack)"
+        options={{
+          title: 'stack',
+          tabBarIcon: ({ color }) => <FontAwesome size={30} name="sign-out" color={color} />,
         }}
       />
     </Tabs>

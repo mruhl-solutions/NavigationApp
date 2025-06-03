@@ -3,7 +3,7 @@ import { Redirect } from "expo-router"
 const App = () => {
 
   //Lanzar la pantalla cuando se inicia
-  return <Redirect href='/tabs' />
+  return <Redirect href='/drawer' />
 }
 
 export default App

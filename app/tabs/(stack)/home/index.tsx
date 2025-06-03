@@ -8,15 +8,15 @@ const HomeScreen = () => {
     <SafeAreaView className='px-10 mt-5'>
       <View>
 
-        <CustomButton color='primary' className='mb-2' onPress={() => router.push('/products')}>
+        <CustomButton color='primary' className='mb-2' onPress={() => router.push('/tabs/(stack)/products')}>
           Productos
         </CustomButton>
 
-        <CustomButton color='secondary' className='mb-2' onPress={() => router.push('/profile')}>
+        <CustomButton color='secondary' className='mb-2' onPress={() => router.push('/tabs/(stack)/profile')}>
           Perfil
         </CustomButton>
 
-        <CustomButton color='tertiary' className='mb-2' onPress={() => router.push('/settings')}>
+        <CustomButton color='tertiary' className='mb-2' onPress={() => router.push('/tabs/(stack)/settings')}>
           Ajustes
         </CustomButton>
 
